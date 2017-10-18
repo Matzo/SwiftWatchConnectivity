@@ -1,0 +1,16 @@
+PODS:
+  - SwiftWatchConnectivity (0.1.0)
+
+DEPENDENCIES:
+  - SwiftWatchConnectivity (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftWatchConnectivity:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SwiftWatchConnectivity: a4748f32aab506713198057ccba1661b091f5203
+
+PODFILE CHECKSUM: e6828776e62fc6b70187a74c9d3cb589648b6437
+
+COCOAPODS: 1.3.1

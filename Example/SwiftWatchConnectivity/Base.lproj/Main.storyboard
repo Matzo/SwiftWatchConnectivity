@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jib-bK-Let">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="7Bn-it-U5f">
+            <objects>
+                <viewController id="jib-bK-Let" customClass="ViewController" customModule="SwiftWatchConnectivity_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yfn-Ai-5Mf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnd-oU-IQU">
+                                <rect key="frame" x="156" y="318" width="62" height="30"/>
+                                <state key="normal" title="Message"/>
+                                <connections>
+                                    <action selector="didTapSendMessageButtonWithButton:" destination="jib-bK-Let" eventType="touchUpInside" id="dOX-KH-EiT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jjg-P6-tIj">
+                                <rect key="frame" x="158.5" y="418" width="59" height="30"/>
+                                <state key="normal" title="UserInfo"/>
+                                <connections>
+                                    <action selector="didTapSendUserInfoButtonWithButton:" destination="jib-bK-Let" eventType="touchUpInside" id="Jcg-R3-xNK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJI-gz-CL6">
+                                <rect key="frame" x="172.5" y="468" width="30" height="30"/>
+                                <state key="normal" title="File"/>
+                                <connections>
+                                    <action selector="didTapSendFileButtonWithButton:" destination="jib-bK-Let" eventType="touchUpInside" id="bqr-1f-lw1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctz-ee-0EJ">
+                                <rect key="frame" x="0.0" y="120" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTY-3y-C6T">
+                                <rect key="frame" x="140" y="368" width="94" height="30"/>
+                                <state key="normal" title="MessageData"/>
+                                <connections>
+                                    <action selector="didTapSendDataButtonWithButton:" destination="jib-bK-Let" eventType="touchUpInside" id="YqC-2V-dO2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jjg-P6-tIj" firstAttribute="centerX" secondItem="yfn-Ai-5Mf" secondAttribute="centerX" id="2uJ-Wg-vGH"/>
+                            <constraint firstItem="Jjg-P6-tIj" firstAttribute="top" secondItem="QTY-3y-C6T" secondAttribute="bottom" constant="20" id="4Rn-70-eOG"/>
+                            <constraint firstItem="KJI-gz-CL6" firstAttribute="centerX" secondItem="yfn-Ai-5Mf" secondAttribute="centerX" id="AKf-aC-zx1"/>
+                            <constraint firstItem="QTY-3y-C6T" firstAttribute="top" secondItem="cnd-oU-IQU" secondAttribute="bottom" constant="20" id="AQJ-T6-0B2"/>
+                            <constraint firstItem="VV3-xL-Umc" firstAttribute="trailing" secondItem="Ctz-ee-0EJ" secondAttribute="trailing" id="Nnn-M8-gsR"/>
+                            <constraint firstItem="cnd-oU-IQU" firstAttribute="centerY" secondItem="yfn-Ai-5Mf" secondAttribute="centerY" id="TVn-5H-g1C"/>
+                            <constraint firstItem="KJI-gz-CL6" firstAttribute="top" secondItem="Jjg-P6-tIj" secondAttribute="bottom" constant="20" id="bFg-lg-shV"/>
+                            <constraint firstItem="cnd-oU-IQU" firstAttribute="centerX" secondItem="yfn-Ai-5Mf" secondAttribute="centerX" id="l2F-T2-cgU"/>
+                            <constraint firstItem="Ctz-ee-0EJ" firstAttribute="top" secondItem="VV3-xL-Umc" secondAttribute="top" constant="100" id="nXg-4u-kVV"/>
+                            <constraint firstItem="Ctz-ee-0EJ" firstAttribute="leading" secondItem="VV3-xL-Umc" secondAttribute="leading" id="ngT-tc-FzG"/>
+                            <constraint firstItem="QTY-3y-C6T" firstAttribute="centerX" secondItem="yfn-Ai-5Mf" secondAttribute="centerX" id="oVU-kJ-YlR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VV3-xL-Umc"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="Ctz-ee-0EJ" id="Oij-Ky-BRT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WuA-4y-QBh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

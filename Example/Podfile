@@ -1,0 +1,19 @@
+use_frameworks!
+
+target 'SwiftWatchConnectivity_Example' do
+  pod 'SwiftWatchConnectivity', :path => '../'
+
+  target 'SwiftWatchConnectivity_Tests' do
+    inherit! :search_paths
+  end
+end
+
+target 'SwiftWatchConnectivity-WatchKit-App' do
+    use_frameworks!
+    pod 'SwiftWatchConnectivity', :path => '../'
+end
+
+target 'SwiftWatchConnectivity-WatchKit-Extension' do
+    use_frameworks!
+    pod 'SwiftWatchConnectivity', :path => '../'
+end
