@@ -76,7 +76,7 @@ SwiftWatchConnectivity.shared.transferUserInfo(userInfo: [
 // send file with metadata
 let fileURL = Bundle.main.url(forResource: "dog", withExtension: "jpg")!
 SwiftWatchConnectivity.shared.transferFile(fileURL: fileURL, metadata: ["Level": 8])
-``
+```
 
 ## Requirements
 - iOS 9.3
