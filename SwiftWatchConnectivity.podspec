@@ -12,26 +12,18 @@ Pod::Spec.new do |s|
   s.summary          = 'Simple WatchConnectivity wrapper.'
 
   s.description      = <<-DESC
-Simple WatchConnectivity wrapper.
+SwiftWatchConnectivity is a WatchConnectivity simple wrapper.
+- Queueing requested and received task until all available
+- Support all transer between iOS and watchOS
                        DESC
 
-  s.homepage         = 'https://github.com/ksk.matsuo@gmail.com/SwiftWatchConnectivity'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/Matzo/SwiftWatchConnectivity'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ksk.matsuo@gmail.com' => 'ksk.matsuo@gmail.com' }
   s.source           = { :git => 'https://github.com/Matzo/SwiftWatchConnectivity.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.3'
   s.watchos.deployment_target = '4.0'
 
   s.source_files = 'SwiftWatchConnectivity/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'SwiftWatchConnectivity' => ['SwiftWatchConnectivity/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
